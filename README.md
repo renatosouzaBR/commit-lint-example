@@ -1,3 +1,5 @@
+## CommitLintExample
+
 Neste projeto eu configurei e testei o **CommitLint** para implantar nos projetos da empresa onde trabalho. Basicamente, o **CommitLint** nos ajuda a estruturar a mensagem de commit, sendo que podemos nos beneficiar dessa estrutura para automatizar processos, como por exemplo, um build.
 
 Para começar você pode consultar a [documentação](https://commitlint.js.org/#/guides-local-setup), ou então seguir este tutorial onde eu explico passo a passo como eu fiz.
@@ -55,3 +57,7 @@ A resposta vai ser:
 Podemos identificar que o **CommitLint** traz diversas regras para a mensagem, e uma delas é o tipo, sendo **build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test**. Agora vamos trocar **foo** por um tipo válido e ver se tudo ocorre bem.
 
 	git commit -m "feat: initial commit"
+	
+Esse comando deve ser executado com sucesso. 
+
+**Aqui finalizamos, qualquer coisa entre em contato**.
