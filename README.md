@@ -14,7 +14,13 @@ Então, crie um pasta com o nome **CommitLintExample** e depois abra o prompt ne
 	
 O comando **npm init** vai criar um arquivo package.json em seu projeto, para que você possa instalar as dependências. Já o **npm install -D @commitlint/{cli,config-conventional}** adiciona as dependências do **CommitLint** em dev, e o **npm install -D husky** é uma dependência de dev que nos ajuda a configurar ganchos para o git.
 
-Depois de tudo instalado, execute o comando abaixo para criar a estrutura do git.
+Agora crie um arquivo na raiz com o nome **commitlint.config.js** e cole o conteudo a seguir, que tem como objetivo verificar qual configuração queremos aplicar na mensagem de commit.
+
+	module.exports = {
+	  extends: [ '@commitlint/config-conventional' ]
+	};
+
+Agora execute o comando abaixo para criar a estrutura do git.
 
 	git init
 	
